@@ -1,6 +1,9 @@
 package com.eg.www;
 
 import cn.hutool.cron.CronUtil;
+import com.formdev.flatlaf.FlatDarculaLaf;
+
+import javax.swing.*;
 
 /**
  * 微信备份程序
@@ -8,6 +11,9 @@ import cn.hutool.cron.CronUtil;
  */
 public class App {
     public static void main( String[] args ) {
+
+        FlatDarculaLaf.install();
+
         //加载UI
         new AliYunPan();
         //开启定时

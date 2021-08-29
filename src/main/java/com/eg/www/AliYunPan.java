@@ -94,7 +94,7 @@ public class AliYunPan extends JFrame implements ActionListener {
             }
         }
         //设置显示窗口标题
-        setTitle("备份助手");
+        setTitle("阿里云盘备份工具");
         //设置标题栏的图标
         this.setIconImage(new ImageIcon(getClass().getResource("/images/logo.png")).getImage());
         //设置窗口显示尺寸
@@ -130,7 +130,7 @@ public class AliYunPan extends JFrame implements ActionListener {
          */
         JLabel pathTitle = new JLabel("选择目录");
         pathText = new JTextField();
-        JLabel tokenTitle = new JLabel("阿里云Token");
+        JLabel tokenTitle = new JLabel("Token");
         //tokenText = new JTextField();
         JLabel folderTitle = new JLabel("备份目录名称");
         folderText = new JTextField();
