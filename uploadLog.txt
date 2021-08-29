@@ -1,3 +1,0 @@
-C:\Users\Administrator\Desktop\HKBTest\HKBTest.exe
-C:\Users\Administrator\Desktop\HKBTest\Kbhk.dll
-C:\Users\Administrator\Desktop\HKBTest\KE.ini
