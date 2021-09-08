@@ -77,6 +77,16 @@ public class AliYunPanUtil{
     }
 
     /**
+     * 暂停备份
+     */
+    public void stopBackup() {
+        CommonConstants.addConsole("暂停成功");
+        startBackup.setText("开始暂停");
+        startBackup.setEnabled(false);
+        CommonConstants.BACK_STATE = false;
+    }
+
+    /**
      * 上传二级文件夹
      * @param fileId
      * @param path

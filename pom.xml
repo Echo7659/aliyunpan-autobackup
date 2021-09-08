@@ -41,6 +41,16 @@
             <artifactId>flatlaf</artifactId>
             <version>0.26</version>
         </dependency>
+        <dependency>
+            <groupId>org.opencb.opencga</groupId>
+            <artifactId>opencga</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -85,7 +95,21 @@
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${jdk-source.version}</source>
+                        <target>${jdk-target.version}</target>
+                        <encoding>UTF-8</encoding>
+                        <compilerArguments>
+                            <!--加载手工添加的jar包-->
+                            <extdirs>src/main/webapp/WEB-INF/lib/</extdirs>
+                        </compilerArguments>
+                    </configuration>
+                    <version>${maven-compiler-plugin.version}</version>
+                </plugin>
             </plugins>
+
         </pluginManagement>
 
     </build>

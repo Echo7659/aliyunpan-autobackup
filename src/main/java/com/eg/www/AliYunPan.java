@@ -6,11 +6,13 @@ import cn.hutool.setting.Setting;
 import com.eg.www.common.CommonConstants;
 import com.eg.www.common.utils.AliYunPanUtil;
 import com.eg.www.common.utils.FileUtil;
+import com.eg.www.common.utils.Login;
 
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
 import java.awt.*;
 import java.awt.event.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
 
 /**
@@ -50,6 +52,16 @@ public class AliYunPan extends JFrame implements ActionListener {
     private JRadioButton puTongRadio;
     // 迭代二单选框
     private JRadioButton fenLeiRadio;
+
+/*
+    //登陆按钮
+    private JButton loginBtn = CommonConstants.loginBtn;
+    //账号框
+    private JTextField usernameText = CommonConstants.userNameText;
+    //密码框
+    private JTextField pwdText = CommonConstants.pwdText;
+
+*/
 
     // 开始备份
     private JButton startBackup = CommonConstants.startBackup;
@@ -130,13 +142,16 @@ public class AliYunPan extends JFrame implements ActionListener {
          */
         JLabel pathTitle = new JLabel("选择目录");
         pathText = new JTextField();
+
         JLabel tokenTitle = new JLabel("Token");
         //tokenText = new JTextField();
         JLabel folderTitle = new JLabel("备份目录名称");
         folderText = new JTextField();
+
         JLabel backTitle = new JLabel("备份模式");
         backTitle.setBounds(title_left, 150, title_width, title_high);
         container.add(backTitle);
+
         // 路径选择区域
         JPanel selectPanle = new JPanel();
         selectPanle.setLayout(null);
@@ -262,6 +277,7 @@ public class AliYunPan extends JFrame implements ActionListener {
 
             //暂停按钮
             if (e.getSource() == pauseBackup) {
+                aliYunPanUtil.stopBackup();
                 JOptionPane.showMessageDialog(null, "此功能正在开发中...", "提示", JOptionPane.INFORMATION_MESSAGE);
             }
         }

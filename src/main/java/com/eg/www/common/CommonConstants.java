@@ -24,6 +24,17 @@ public class CommonConstants {
     public static JScrollBar scrollBar = consolePane.getVerticalScrollBar();
     // Token文本框
     public static JTextField tokenText = new JTextField();
+/*
+
+    // 账号框
+    public static JTextField userNameText = new JTextField();
+    // 密码框
+    public static JTextField pwdText = new JTextField();
+    //登陆按钮
+    public static JButton loginBtn = new JButton("登陆");
+
+*/
+
     //开始备份按钮
     public static JButton startBackup = new JButton("开始备份");
     //当前路径

@@ -26,7 +26,7 @@ public class OkHttpUtil {
 
     /**
      * 阿里云盘交互的POST请求
-     * @param url
+     * @param url  https://websv.aliyundrive.com/token/refresh
      * @param data
      * @return
      * @throws Exception
@@ -65,7 +65,7 @@ public class OkHttpUtil {
 
     /**
      * 阿里云盘上传文件的POST请求
-     * @param url
+     * @param url https://api.aliyundrive.com/v2/file/create
      * @param data
      * @return
      * @throws Exception
