@@ -12,4 +12,7 @@
 登录网页端阿里云盘后 控制台输入 JSON.parse(localStorage.getItem('token')).refresh_token 即可获取Token
 网页端地址:https://www.aliyundrive.com/
 
-
+This is an alicloud disk automatic backup tool developed using Java. At present, the development progress is 60%
+####Token acquisition method
+Log in to the alicloud disk console on the web side and enter json.parse (localstorage. Getitem ('token ')). Refresh_ You can get a token by using a token
+Web address: https://www.aliyundrive.com/
